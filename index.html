@@ -1,73 +1,79 @@
-
+<!doctype html>
+<html lang="en">
 <head>
   <!-- Essential Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta name="description" content="IZYCOM CONSULTS LTD is a trusted leader in ICT solutions, specializing in digital transformation, business process automation, and corporate training. Empower your business with innovative software, hardware, and consulting services designed for operational excellence." />
-  <meta name="keywords" content="ICT Solutions, Cyber Security, Digital Transformation, Digital Forensics, Business Automation, Corporate Training, Software Development, Web Development, Hardware Solutions, IZYCOM CONSULTS" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta name="description" content="IZYCOM CONSULTS LTD provides ICT solutions including digital transformation, cybersecurity, business automation, and corporate training to help businesses achieve operational excellence." />
+  <meta name="keywords" content="ICT Solutions, Cyber Security, Digital Transformation, Digital Forensics, Business Automation, Corporate Training, Software Development, Web Development" />
   <meta name="robots" content="index, follow" />
-  
+
   <!-- Page Title -->
   <title>IZYCOM CONSULTS - Leading ICT Solutions Provider</title>
 
   <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="IZYCOM CONSULTS - Transforming Businesses with ICT Solutions" />
-  <meta property="og:description" content="IZYCOM CONSULTS LTD offers premier ICT services in Cyber Security, Robotics, Data Analysis, digital transformation, business automation, and corporate training. Discover how our innovative solutions can transform your business." />
-  <meta property="og:image" content="assets/img/New IZYCOMlogo.webp" />
+  <meta property="og:description" content="IZYCOM CONSULTS LTD offers premier ICT services in Cyber Security, Robotics, Data Analysis, digital transformation, business automation, and corporate training." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=IZYCOM+CONSULTS" />
   <meta property="og:url" content="https://izycom.org/index.html" />
   <meta property="og:site_name" content="IZYCOM CONSULTS LTD" />
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link rel="icon" href="https://via.placeholder.com/32.png?text=I" />
+  <link rel="apple-touch-icon" href="https://via.placeholder.com/180.png?text=IZYCOM" />
 
   <!-- Google Fonts -->
-  
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Vendor CSS (CDNs) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
 
-  <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- Template Main CSS File -->
+  <!-- Template Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
+
   <style>
-.partners-list {
+    /* Small utility tweaks to keep partner strip responsive */
+    .partners-list {
       display: flex;
-      overflow-x: scroll;
+      overflow-x: auto;
       width: 100%;
-      white-space: nowrap;
+      gap: 1rem;
+      padding: 1rem 0;
     }
-    
-    .image{
-      width: auto;
-      max-width: 1200px; 
-      height: auto;
-      margin: 0 auto; 
-      display: inline-block;
+    .partner-image {
+      flex: 0 0 auto;
+      width: 160px;
+      height: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 6px;
     }
-    .image img {
-      width: 100%; 
-      height: auto;
-      margin: 0 auto;
+    .partner-image img { max-width: 100%; max-height: 100%; display:block;}
+    .btn-custom {
+      border-radius: 10px;
+      background-color: #6f2b2b;
+      color: #fff;
+      padding: .6rem 1rem;
+      border: none;
     }
-    .button{
-        
-        border-radius:10px;
-        background-color:brown;
-        color:#fff;
-    }
+    /* Ensure hero caption is readable on all devices */
+    #hero .carousel-content { max-width: 900px; margin: 0 auto; }
+    /* Make embedded map responsive */
+    .map iframe { width: 100%; height: 320px; border:0; }
   </style>
-<!-- Google Tag Manager -->
-        <script>
+
+  <!-- Google Tag Manager (kept as original) -->
+  <script>
   (function(w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -78,8 +84,7 @@
     j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
   })(window, document, 'script', 'dataLayer', 'GTM-5TSSRCKT');
-        </script>
-    <!-- End Google Tag Manager -->
+  </script>
 </head>
 
 <body>
@@ -87,39 +92,34 @@
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSSRCKT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="fixed-top d-flex align-items-center">
+  <section id="topbar" class="fixed-top d-flex align-items-center bg-white">
     <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center">
-          <a href="mailto:info@izycom.org">info@izycom.org</a>
-        </i>
-        <i class="bi bi-phone d-flex align-items-center ms-4">
-          <span>+2347064582355</span>
-        </i>
+      <div class="contact-info d-flex align-items-center small">
+        <i class="bi bi-envelope d-flex align-items-center me-2"><a href="mailto:info@izycom.org">info@izycom.org</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-3"><span>+2347064582355</span></i>
       </div>
       <div class="social-links d-none d-md-flex">
-        <a href="https://twitter.com/izycom_consults" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/izycomconsults" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/izycomconsults" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/izycom" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/izycom_consults" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/izycomconsults" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/izycomconsults" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/izycom" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
+  <header id="header" class="fixed-top bg-light shadow-sm">
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo">
-        <a href="index.html">
-          <img src="assets/img/logo-removebg-preview.png" alt="IZYCOM Logo">
+        <a href="index.html" aria-label="IZYCOM Home">
+          <img src="https://via.placeholder.com/200x60.png?text=IZYCOM" alt="IZYCOM Logo" height="48">
         </a>
       </div>
 
       <nav id="navbar" class="navbar">
-        <ul>
+        <ul class="list-unstyled d-flex mb-0 align-items-center gap-3">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
@@ -127,561 +127,300 @@
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" aria-hidden="true"></i>
       </nav><!-- .navbar -->
     </div>
   </header>
   <!-- End Header -->
- 
-<!-- ======= Hero Section ======= -->
-<section id="hero">
-  <div class="hero-container">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <!-- Indicators -->
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="pt-5">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <!-- Carousel Slides -->
-      <div class="carousel-inner" role="listbox">
+        <!-- Indicators -->
+        <div class="carousel-indicators"></div>
 
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
-          <div class="carousel-container">
-            <div class="carousel-content text-center">
-              <h2 class="animate__animated animate__fadeInDown">
-                <span class="text-primary">IZYCOM CONSULTS</span>
-              </h2>
-              <p class="animate__animated animate__fadeInUp">
-                Empowering organizations with digital transformation solutions to achieve business success and thrive in the digital age.
-              </p>
-              <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn-get-started scrollto animate__animated animate__fadeInUp" target="_blank">
-                Register Now
-              </a>
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&q=80'); background-size: cover; background-position:center;">
+            <div class="carousel-container py-6">
+              <div class="carousel-content text-center text-white">
+                <h2 class="animate__animated animate__fadeInDown"><span class="text-primary">IZYCOM CONSULTS</span></h2>
+                <p class="animate__animated animate__fadeInUp">Empowering organizations with digital transformation solutions to achieve business success and thrive in the digital age.</p>
+                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
-          <div class="carousel-container">
-            <div class="carousel-content text-center">
-              <h2 class="animate__animated animate__fadeInDown">OPERATIONAL EVOLUTION</h2>
-              <p class="animate__animated animate__fadeInUp">
-                Streamline workflows, improve efficiency, and optimize your supply chain with our tailored solutions that eliminate bottlenecks and reduce waste.
-              </p>
-              <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn-get-started scrollto animate__animated animate__fadeInUp" target="_blank">
-                Register Now
-              </a>
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80'); background-size: cover; background-position:center;">
+            <div class="carousel-container py-6">
+              <div class="carousel-content text-center text-white">
+                <h2 class="animate__animated animate__fadeInDown">OPERATIONAL EVOLUTION</h2>
+                <p class="animate__animated animate__fadeInUp">Streamline workflows, improve efficiency, and optimize your supply chain with tailored solutions that eliminate bottlenecks and reduce waste.</p>
+                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
-          <div class="carousel-container">
-            <div class="carousel-content text-center">
-              <h2 class="animate__animated animate__fadeInDown">OUR GLOBAL REACH</h2>
-              <p class="animate__animated animate__fadeInUp">
-                Partnering with clients worldwide, we deliver consistent quality and expertise to help businesses thrive, regardless of location.
-              </p>
-              <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn-get-started scrollto animate__animated animate__fadeInUp" target="_blank">
-                Register Now
-              </a>
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=1600&q=80'); background-size: cover; background-position:center;">
+            <div class="carousel-container py-6">
+              <div class="carousel-content text-center text-white">
+                <h2 class="animate__animated animate__fadeInDown">OUR GLOBAL REACH</h2>
+                <p class="animate__animated animate__fadeInUp">Partnering with clients worldwide, delivering consistent quality and expertise to help businesses thrive regardless of location.</p>
+                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
+              </div>
             </div>
           </div>
+
         </div>
 
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+
       </div>
-
-      <!-- Carousel Controls -->
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon ri-arrow-left-line" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon ri-arrow-right-line" aria-hidden="true"></span>
-      </a>
-
     </div>
-  </div>
-</section>
-<!-- End Hero Section -->
+  </section>
+  <!-- End Hero Section -->
 
-<main id="main">
+  <main id="main">
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="container">
-
-    <div class="row content align-items-center">
-      
-      <!-- Company Overview Text -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold text-primary">Company Overview</h2>
-        <p>
-          At <strong>Izycom Consults Limited</strong>, we are a technology solutions company driven by innovation and dedicated to empowering businesses with exceptional services. Our team consists of highly skilled and experienced professionals passionate about leveraging technology to help businesses thrive. Since our establishment, we have been at the forefront of innovation, delivering cutting-edge ICT solutions to organizations of all sizes across diverse industries.
-        </p>
-        <p>
-          We provide a comprehensive range of services tailored to our clients' unique needs, including digital transformation, security and compliance, operational evolution, IT hardware optimization, home and office automation, and professional training. Our expertise and commitment to excellence drive the success of the businesses we partner with.
-        </p>
-      </div>
-
-      <!-- Foundational Values and Commitment -->
-      <div class="col-lg-6 pt-4 pt-lg-0">
-        <h2 class="fw-bold text-success">Our Commitment</h2>
-        <p>
-          Established in <strong>2021</strong>, Izycom Consults Limited was founded with the vision of helping businesses streamline operations and achieve their goals through transformative technology solutions.
-        </p>
-        <p>
-          Our client-centric approach focuses on understanding their unique needs, challenges, and objectives. We collaborate closely to develop customized solutions that address specific requirements and deliver sustainable, measurable results. Building long-term partnerships is at the core of our values.
-        </p>
-        <p>
-          We are passionate about innovation and staying ahead of industry trends. By continuously improving our skills and embracing emerging technologies, we deliver world-class solutions that empower businesses to excel in today’s fast-evolving digital landscape.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- End About Section -->
-
-
-<!-- ======= About List Section ======= -->
-<section id="about-list" class="about-list py-5" aria-labelledby="about-list-title">
-  <div class="container">
-
-    <header class="section-header text-center mb-5">
-      <h2 id="about-list-title" class="fw-bold text-uppercase">
-        About Us
-      </h2>
-      <p class="text-muted">
-        Discover our vision, mission, and goals that drive our commitment to digital transformation and innovation.
-      </p>
-    </header>
-
-    <div class="row align-items-center">
-
-      <!-- Content Section -->
-      <div class="col-lg-6 order-2 order-lg-1">
-        
-        <!-- Vision -->
-        <article class="icon-box mt-4" role="listitem" aria-labelledby="vision-title">
-          <div class="icon">
-            <i class="bx bx-receipt text-primary bx-lg"></i>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <div class="row content align-items-center">
+          <div class="col-lg-6">
+            <h2 class="fw-bold text-primary">Company Overview</h2>
+            <p>At <strong>Izycom Consults Limited</strong>, we are a technology solutions company driven by innovation and dedicated to empowering businesses with exceptional services. Our team combines deep technical skills with real-world business experience to deliver measurable results.</p>
+            <p>We provide a comprehensive range of services tailored to our clients' unique needs, including digital transformation, security and compliance, operational evolution, IT hardware optimization, and corporate training.</p>
           </div>
-          <h3 id="vision-title" class="fw-bold text-uppercase">Vision</h3>
-          <br>
-          <p>
-            To inspire and provide innovative solutions that digitally transform organizations worldwide, empowering them to excel in a rapidly evolving digital landscape.
-          </p>
-        </article>
-            <br>
-            <br>
-        <!-- Mission -->
-        <article class="icon-box mt-4" role="listitem" aria-labelledby="mission-title">
-          <div class="icon">
-            <i class="bx bx-cube-alt text-success bx-lg"></i>
+
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h2 class="fw-bold text-success">Our Commitment</h2>
+            <p>Established in <strong>2021</strong>, Izycom Consults Limited was founded with the vision of helping businesses streamline operations and achieve their goals through transformative technology and people-centered change.</p>
+            <p>Our client-centric approach focuses on understanding each client's unique needs, challenges, and objectives. We collaborate closely to develop customized solutions that address specific requirements and deliver long-term outcomes.</p>
+            <p>We are passionate about innovation and staying ahead of industry trends. By continuously improving our skills and embracing emerging technologies, we deliver world-class solutions that empower our clients to compete and grow.</p>
           </div>
-          <h3 id="mission-title" class="fw-bold text-uppercase">Mission</h3>
-          <br>
-          <p>
-            To empower individuals and businesses globally by delivering cutting-edge digital transformation solutions, fostering growth, and unlocking their full potential.
-          </p>
-        </article>
-            <br>
-            <br>
-        <!-- Goal -->
-        <article class="icon-box mt-4" role="listitem" aria-labelledby="goal-title">
-          <div class="icon">
-            <i class="bx bx-directions text-warning bx-lg"></i>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= About List Section ======= -->
+    <section id="about-list" class="about-list py-5" aria-labelledby="about-list-title">
+      <div class="container">
+        <header class="section-header text-center mb-5">
+          <h2 id="about-list-title" class="fw-bold text-uppercase">About Us</h2>
+          <p class="text-muted">Discover our vision, mission, and goals that drive our commitment to digital transformation and innovation.</p>
+        </header>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <article class="icon-box mt-4" role="listitem" aria-labelledby="vision-title">
+              <div class="icon"><i class="bx bx-receipt text-primary bx-lg" aria-hidden="true"></i></div>
+              <h3 id="vision-title" class="fw-bold text-uppercase">Vision</h3>
+              <p>To inspire and provide innovative solutions that digitally transform organizations worldwide, empowering them to excel in a rapidly evolving digital landscape.</p>
+            </article>
+
+            <article class="icon-box mt-4" role="listitem" aria-labelledby="mission-title">
+              <div class="icon"><i class="bx bx-cube-alt text-success bx-lg" aria-hidden="true"></i></div>
+              <h3 id="mission-title" class="fw-bold text-uppercase">Mission</h3>
+              <p>To empower individuals and businesses globally by delivering cutting-edge digital transformation solutions, fostering growth, and unlocking their full potential.</p>
+            </article>
+
+            <article class="icon-box mt-4" role="listitem" aria-labelledby="goal-title">
+              <div class="icon"><i class="bx bx-directions text-warning bx-lg" aria-hidden="true"></i></div>
+              <h3 id="goal-title" class="fw-bold text-uppercase">Goal</h3>
+              <p>To establish ourselves as the premier provider of innovative digital transformation solutions, enabling organizations to achieve operational excellence and long-term success.</p>
+            </article>
           </div>
-          <h3 id="goal-title" class="fw-bold text-uppercase">Goal</h3>
-          <br>
-          <p>
-            To establish ourselves as the premier provider of innovative digital transformation solutions, enabling organizations to achieve operational excellence and long-term success.
-          </p>
-        </article>
-      </div>
 
-            <br>
-            <br>
-      <!-- Image Section -->
-      <div class="col-lg-6 order-1 order-lg-2">
-          
-        <figure class="image" aria-hidden="true">
-          <img src="assets/img/about-list-img.png" alt="Digital Transformation Illustration" class="img-fluid rounded">
-        </figure>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- End About List Section -->
-
-<!-- ======= Counts Section ======= -->
-<section id="counts" class="counts" aria-labelledby="counts-title">
-  <div class="container position-relative">
-
-    <!-- Section Title -->
-    <div class="text-center title">
-      <h2 id="counts-title" class="text-bold">What We Have Achieved So Far</h2>
-    </div>
-
-    <!-- Counters Row -->
-    <div class="row counters mt-4" role="list">
-
-      <!-- Clients Counter -->
-      <article class="col-lg-3 col-6 text-center" role="listitem" aria-labelledby="clients-counter-title">
-        <span 
-          id="clients-counter" 
-          data-purecounter-start="0" 
-          data-purecounter-end="232" 
-          data-purecounter-duration="1" 
-          class="purecounter" 
-          aria-hidden="true">
-        </span>
-        <p id="clients-counter-title" class="fw-bold">Clients</p>
-      </article>
-
-      <!-- Projects Counter -->
-      <article class="col-lg-3 col-6 text-center" role="listitem" aria-labelledby="projects-counter-title">
-        <span 
-          id="projects-counter" 
-          data-purecounter-start="0" 
-          data-purecounter-end="521" 
-          data-purecounter-duration="1" 
-          class="purecounter" 
-          aria-hidden="true">
-        </span>
-        <p id="projects-counter-title" class="fw-bold">Projects</p>
-      </article>
-
-      <!-- Hours of Support Counter -->
-      <article class="col-lg-3 col-6 text-center" role="listitem" aria-labelledby="support-counter-title">
-        <span 
-          id="support-counter" 
-          data-purecounter-start="0" 
-          data-purecounter-end="1463" 
-          data-purecounter-duration="1" 
-          class="purecounter" 
-          aria-hidden="true">
-        </span>
-        <p id="support-counter-title" class="fw-bold">Hours of Support</p>
-      </article>
-
-      <!-- Professional Employees Counter -->
-      <article class="col-lg-3 col-6 text-center" role="listitem" aria-labelledby="employees-counter-title">
-        <span 
-          id="employees-counter" 
-          data-purecounter-start="0" 
-          data-purecounter-end="18" 
-          data-purecounter-duration="1" 
-          class="purecounter" 
-          aria-hidden="true">
-        </span>
-        <p id="employees-counter-title" class="fw-bold">Professional Employees</p>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-<!-- End Counts Section -->
-
-
-
-
-<!-- ======= About List Section ======= -->
-<section id="about-list" class="about-list" aria-labelledby="core-values-title">
-  <div class="container">
-
-    <!-- Section Title -->
-    <div class="section-title text-center">
-      <h2 id="core-values-title" class="text-bold mt-5">OUR CORE VALUES</h2>
-      <p class="mt-3 text-muted">
-        At IZYCOM CONSULTS Limited, our core values are the guiding principles that shape our mission and vision. 
-        They reflect our commitment to innovation, connectivity, and inspiration as we drive success for our clients 
-        and partners. Each value serves as a cornerstone of our organizational culture.
-      </p>
-    </div>
-
-    <!-- Core Values Content -->
-    <div class="row mt-4">
-      <div class="col-lg-12">
-
-        <!-- Innovate -->
-        <article class="icon-box mt-4 d-flex align-items-start" aria-labelledby="innovate-title">
-          <div class="icon me-4">
-            <i class="bx bx-paint-roll bx-fade-right bx-lg text-primary" aria-hidden="true"></i>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <figure class="image" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=900&q=80" alt="Digital Transformation Illustration" class="img-fluid rounded">
+            </figure>
           </div>
-          <div>
-            <h3 id="innovate-title" class="text-uppercase fw-bold">Innovate</h3>
-            <p>
-              Innovation is the heartbeat of progress. We challenge the status quo by encouraging our team to think outside the box, 
-              explore groundbreaking technologies, and bring fresh perspectives to the table. By embracing change and fostering creativity, 
-              we deliver cutting-edge solutions tailored to meet the unique needs of our clients in an ever-evolving business environment.
-            </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About List Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts py-5 bg-light" aria-labelledby="counts-title">
+      <div class="container position-relative">
+        <div class="text-center title">
+          <h2 id="counts-title" class="text-bold">What We Have Achieved So Far</h2>
+        </div>
+
+        <div class="row counters mt-4 text-center">
+          <div class="col-lg-3 col-6 mb-3">
+            <span id="clients-counter" data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter">232</span>
+            <p class="fw-bold">Clients</p>
           </div>
-        </article>
-
-        <!-- Connect -->
-        <article class="icon-box mt-4 d-flex align-items-start" aria-labelledby="connect-title">
-          <div class="icon me-4">
-            <i class="bx bx-conversation bx-tada bx-lg text-success" aria-hidden="true"></i>
+          <div class="col-lg-3 col-6 mb-3">
+            <span id="projects-counter" data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter">521</span>
+            <p class="fw-bold">Projects</p>
           </div>
-          <div>
-            <h3 id="connect-title" class="text-uppercase fw-bold">Connect</h3>
-            <p>
-              Connection is at the core of everything we do. We foster meaningful relationships by creating open channels of communication 
-              between our team, clients, and partners. Our collaborative approach ensures we understand diverse perspectives, enabling us to 
-              craft solutions that align perfectly with our clients' goals and aspirations.
-            </p>
+          <div class="col-lg-3 col-6 mb-3">
+            <span id="support-counter" data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter">1463</span>
+            <p class="fw-bold">Hours of Support</p>
           </div>
-        </article>
-
-        <!-- Inspire -->
-        <article class="icon-box mt-4 d-flex align-items-start" aria-labelledby="inspire-title">
-          <div class="icon me-4">
-            <i class='bx bxs-plane-take-off bx-fade-up bx-lg text-warning' aria-hidden="true"></i>
+          <div class="col-lg-3 col-6 mb-3">
+            <span id="employees-counter" data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter">18</span>
+            <p class="fw-bold">Professional Employees</p>
           </div>
-          <div>
-            <h3 id="inspire-title" class="text-uppercase fw-bold">Inspire</h3>
-            <p>
-              Inspiration fuels achievement. At IZYCOM CONSULTS Limited
-
-
-
-<!-- ======= Why Choose Us Section ======= -->
-<section id="whychooseus" class="services section-bg-two">
-  <div class="container">
-
-    <div class="section-title my-3">
-      <span>WHY CHOOSE US</span>
-      <p class="mt-5 text-white">
-        Our core competence lies in providing customized and effective solutions to our clients' business needs. 
-        With a team of experienced and highly skilled professionals, we are committed to delivering high-quality services 
-        that exceed expectations. Here's why clients choose us:
-      </p>
-    </div>
-
-    <div class="row">
-      <!-- Expertise -->
-      <div class="col-md-6">
-        <div class="icon-box">
-          <i class="bi bi-briefcase"></i>
-          <h4>01</h4>
-          <h4>EXPERTISE</h4>
-          <p>Our deep understanding of diverse industries and the latest technologies enables us to provide innovative and effective solutions.</p>
         </div>
       </div>
-      
-      <!-- Customer Satisfaction -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-card-checklist"></i>
-          <h4>04</h4>
-          <h4>CUSTOMER SATISFACTION</h4>
-          <p>We prioritize our clients' satisfaction, ensuring they receive the best experience and value for their investment.</p>
+    </section>
+    <!-- End Counts Section -->
+
+    <!-- ======= Core Values Section ======= -->
+    <section id="core-values" class="py-5">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 class="text-bold mt-5">OUR CORE VALUES</h2>
+          <p class="mt-3 text-muted">At IZYCOM CONSULTS Limited, our core values are the guiding principles that shape our mission and vision. They reflect our commitment to innovation, connectivity, and excellence.</p>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <article class="icon-box mt-4 d-flex align-items-start">
+              <div class="icon me-4"><i class="bx bx-paint-roll bx-lg text-primary" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="text-uppercase fw-bold">Innovate</h3>
+                <p>We challenge the status quo by encouraging our team to think creatively, explore emerging technologies and deliver forward-looking solutions for our clients.</p>
+              </div>
+            </article>
+
+            <article class="icon-box mt-4 d-flex align-items-start">
+              <div class="icon me-4"><i class="bx bx-conversation bx-lg text-success" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="text-uppercase fw-bold">Connect</h3>
+                <p>We foster meaningful relationships through transparent communication and strong partnerships that allow collaborative problem solving and better outcomes.</p>
+              </div>
+            </article>
+
+            <article class="icon-box mt-4 d-flex align-items-start">
+              <div class="icon me-4"><i class="bx bxs-plane-take-off bx-lg text-warning" aria-hidden="true"></i></div>
+              <div>
+                <h3 class="text-uppercase fw-bold">Inspire</h3>
+                <p>We motivate clients and colleagues by demonstrating excellence and helping teams adopt new capabilities that unlock growth and impact.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-      
-      <!-- Tailored Solutions -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-bar-chart"></i>
-          <h4>02</h4>
-          <h4>TAILORED SOLUTIONS</h4>
-          <p>Every business is unique. We deliver personalized solutions that address specific client needs effectively.</p>
-        </div>
-      </div>
-      
-      <!-- Competitive Pricing -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-binoculars"></i>
-          <h4>05</h4>
-          <h4>COMPETITIVE PRICING</h4>
-          <p>We offer cost-effective solutions, providing clients with a high return on investment without compromising quality.</p>
-        </div>
-      </div>
-      
-      <!-- Flexibility -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-brightness-high"></i>
-          <h4>03</h4>
-          <h4>FLEXIBILITY</h4>
-          <p>Our services are offered both onsite and virtually. Training programs are customizable to meet scheduling and budgetary requirements.</p>
-        </div>
-      </div>
-      
-      <!-- Industry Partnership -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-calendar4-week"></i>
-          <h4>06</h4>
-          <h4>INDUSTRY PARTNERSHIP</h4>
-          <p>Our partnerships with leading vendors enable us to provide cutting-edge technology solutions to clients.</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
-<!-- End Why Choose Us Section -->
-
-<!-- ======= Services Section ======= -->
-<section id="services" class="services section-bg">
-  <div class="container">
-
-    <div class="section-title">
-      <span>Services</span>
-      <h2>Services</h2>
-      <p>Stay updated with our best-in-class array of digital services.</p>
-    </div>
-
-    <div class="row">
-      <!-- Digital Transformation -->
-      <div class="col-md-6">
-        <div class="icon-box">
-          <i class="bi bi-brightness-high"></i>
-          <h4>DIGITAL TRANSFORMATION</h4>
-          <p>
-            We offer comprehensive solutions to help organizations optimize their operations for the digital age, including:
-          </p>
-          <ul>
-            <li>Identity and Access Management</li>
-            <li>Microsoft Azure Services</li>
-            <li>Data Center Automation</li>
-            <li>Enterprise Storage</li>
-            <li>Business Productivity</li>
-            <li>Enterprise Voice Collaboration</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- Operational Evolution -->
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box">
-          <i class="bi bi-brightness-high"></i>
-          <h4>OPERATIONAL EVOLUTION</h4>
-          <p>
-            Our solutions streamline workflows, improve efficiency, and reduce waste. Services include:
-          </p>
-          <ul>
-            <li>Customer Engagement</li>
-            <li>Business Operations</li>
-            <li>Dynamics 365 for Operations</li>
-            <li>Data Platform</li>
-            <li>Business Intelligence</li>
-            <li>Identity Integration</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Additional Services -->
-      <!-- Home and Office Automation -->
-      <!-- Security and Compliance -->
-      <!-- IT Hardware Optimization -->
-      <!-- Training -->
-      <!-- ... -->
-    </div>
-
-  </div>
-</section>
-<!-- End Services Section -->
-
-       <!-- ======= industries we serve us Section ======= -->
-       <section id="industries" class="services section-bg-two">
-    <div class="container">
-
+    <!-- ======= Why Choose Us Section ======= -->
+    <section id="whychooseus" class="services section-bg-two py-5">
+      <div class="container">
         <div class="section-title my-3">
-            <span>INDUSTRIES WE SERVE</span>
-            <p class="mt-5 text-white">
-                At IZYCOM Consults Ltd, we serve a wide range of industries, leveraging our expertise in agricultural innovations, biogas solutions, and consultancy services to drive sustainable growth and operational excellence. Our team of professionals tailors solutions to address unique challenges and opportunities within these sectors, empowering businesses to achieve their strategic goals.
-            </p>
+          <span>WHY CHOOSE US</span>
+          <p class="mt-3 text-muted">Our core competence lies in providing customized and effective solutions to our clients' business needs. With a team of experienced professionals, we deliver high-quality services that exceed expectations.</p>
         </div>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="icon-box">
-                    <h4><a href="#">Banking and Finance</a></h4>
-                    <p>We offer financial advisory services and technology integration to enhance operational efficiency and customer satisfaction within the financial sector.</p>
-                </div>
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-briefcase"></i>
+              <h4>01 - EXPERTISE</h4>
+              <p>Deep industry knowledge and modern technology skills enable us to create innovative and effective solutions.</p>
             </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Healthcare</a></h4>
-                    <p>Our healthcare solutions include consultancy on waste-to-energy projects and sustainable practices to improve public health and environmental outcomes.</p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-card-checklist"></i>
+              <h4>02 - CUSTOMER SATISFACTION</h4>
+              <p>We prioritize client success, delivering solutions that match client goals and provide measurable value.</p>
             </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Education</a></h4>
-                    <p>We partner with educational institutions to provide training and workshops on sustainable practices, biogas systems, and innovative technologies.</p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-bar-chart"></i>
+              <h4>03 - TAILORED SOLUTIONS</h4>
+              <p>Every solution is designed for the client's unique environment, goals, and budget.</p>
             </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Government and Public Sector</a></h4>
-                    <p>We work with governments to design and implement sustainable energy projects, policy frameworks, and capacity-building programs.</p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-binoculars"></i>
+              <h4>04 - COMPETITIVE PRICING</h4>
+              <p>We provide cost-effective solutions without sacrificing quality, maximizing ROI for our clients.</p>
             </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Retail and E-commerce</a></h4>
-                    <p>Our solutions help retail businesses optimize supply chains and integrate sustainable energy systems to reduce costs and environmental impact.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Manufacturing and Distribution</a></h4>
-                    <p>We provide consultancy on energy efficiency, waste management, and renewable energy integration to enhance productivity and sustainability.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Hospitality and Tourism</a></h4>
-                    <p>Our tailored solutions support eco-friendly practices in the hospitality industry, including energy-efficient systems and sustainable waste management.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Information Technology and Services</a></h4>
-                    <p>We assist IT firms with sustainable data center designs and energy optimization solutions to support green technology initiatives.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Energy and Utilities</a></h4>
-                    <p>Our expertise in biogas and renewable energy technologies helps utility companies achieve sustainable energy production and management.</p>
-                </div>
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <h4><a href="#">Non-profit Organizations</a></h4>
-                    <p>We collaborate with non-profits to implement community-focused sustainable energy projects and capacity-building initiatives for social impact.</p>
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Why Choose Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg py-5">
+      <div class="container">
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Services</h2>
+          <p>Stay updated with our best-in-class array of digital services.</p>
         </div>
 
-    </div>
-</section>  
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-brightness-high"></i>
+              <h4>DIGITAL TRANSFORMATION</h4>
+              <p>Comprehensive solutions including Identity and Access Management, Microsoft Azure Services, Data Center Automation, Enterprise Storage, and more.</p>
+            </div>
+          </div>
 
+          <div class="col-md-6">
+            <div class="icon-box p-3 border rounded">
+              <i class="bi bi-gear"></i>
+              <h4>OPERATIONAL EVOLUTION</h4>
+              <p>Solutions to streamline workflows, improve efficiency, and deliver actionable business intelligence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Industries Section ======= -->
+    <section id="industries" class="services section-bg-two py-5">
+      <div class="container">
+        <div class="section-title my-3">
+          <span>INDUSTRIES WE SERVE</span>
+          <p class="mt-3 text-muted">We partner with organizations across sectors including Banking, Healthcare, Education, Government, Retail, Manufacturing, Hospitality, IT, Energy and Non-profits to deliver sustainable and impactful solutions.</p>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Banking and Finance</h4><p>Technology integration and advisory to enhance operational efficiency and customer experience.</p></div></div>
+          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Healthcare</h4><p>Solutions to improve patient care, sustainability and operational workflows.</p></div></div>
+          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Education</h4><p>Training, workshops and digital tools to support educators and institutions.</p></div></div>
+          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Government</h4><p>Policy advisory, capacity building and sustainable project implementations.</p></div></div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="project" class="portfolio">
+    <section id="project" class="portfolio py-5">
       <div class="container">
-
         <div class="section-title">
           <span>OUR PROJECT</span>
-          <h2>OUR PROJECT</h2> 
+          <h2>OUR PROJECT</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12">
-            <ul id="portfolio-flters">
+            <ul id="portfolio-flters" class="list-unstyled d-flex gap-3 justify-content-center mb-4">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Group 1</li>
               <li data-filter=".filter-card">Group 2</li>
@@ -690,17 +429,15 @@
           </div>
         </div>
 
-        <div class="row portfolio-container">
-          <!-- filter-app, filter-card, filter-web -->
-         
+        <div class="row portfolio-container gy-4">
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
+            <div class="portfolio-wrap border rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1526378725940-7a5e7b3e8a54?w=900&q=80" class="img-fluid" alt="NBRRI project">
+              <div class="portfolio-info p-3">
                 <h4>Nigerian Building & Road Research Institute (NBRRI)</h4>
-                <p>OPERATIONAL EVOLUTION</p>
+                <p>Operational Evolution</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We offered the Operational Evolution solution to assist in optimizing their processes, increasing operational efficiency, and minimizing waste. Our solution identified workflow bottlenecks, removed redundant procedures, and streamlined their supply chain.Consequently, NBRRI experienced a rise in productivity, a decrease inexpenses, and an improvement in customer satisfaction."><i class="ri-add-fill"></i></a>
+                  <a href="https://images.unsplash.com/photo-1526378725940-7a5e7b3e8a54?w=1600&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We offered the Operational Evolution solution to assist in optimizing operations.">View</a>
                   <a href="#" title="More Details"><i class="ri-links-fill"></i></a>
                 </div>
               </div>
@@ -708,13 +445,13 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
+            <div class="portfolio-wrap border rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=900&q=80" class="img-fluid" alt="NIA project">
+              <div class="portfolio-info p-3">
                 <h4>National Intelligence Agency</h4>
-                <p>OPERATIONAL EVOLUTION</p>
+                <p>Security and Compliance</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We leveraged our Security and Compliance solution to assist NIA insafeguarding their data and maintaining a secure environment. Ourteam conducted a meticulous security assessment, identified potential vulnerabilities, and implemented a range of measures to mitigate risks.This involved deploying advanced firewalls, intrusion detection systems,and robust data backup solutions. With our comprehensive solution inplace, NIA was able to bolster their security posture and effectively safeguard sensitive information from unauthorized access."><i class="ri-add-fill"></i></a>
+                  <a href="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1600&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We leveraged our Security and Compliance solution to assist NIA.">View</a>
                   <a href="#" title="More Details"><i class="ri-links-fill"></i></a>
                 </div>
               </div>
@@ -727,171 +464,128 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team py-5">
       <div class="container">
-
         <div class="section-title">
-          <span>OUR TEAM </span>
-          <h2>OUR TEAM</h2> 
+          <span>OUR TEAM</span>
+          <h2>OUR TEAM</h2>
         </div>
 
-        <div class="row"> 
- 
-          <div class="col-lg-3">
-            <div class="member d-flex align-items-center flex-column">
-              <div class="pic"><img src="assets/img/team/team.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info mt-2 text-center">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="member d-flex align-items-center flex-column text-center">
+              <div class="pic"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&q=80" class="img-fluid rounded-circle" alt="Fanny Unaka"></div>
+              <div class="member-info mt-2">
                 <h4>Fanny Unaka</h4>
-                <span>NON-EXECUTIVE DIRECTOR</span> 
-                <div class="social">
+                <span>NON-EXECUTIVE DIRECTOR</span>
+                <div class="social mt-2">
                   <a href="#"><i class="ri-twitter-fill"></i></a>
                   <a href="#"><i class="ri-facebook-fill"></i></a>
                   <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3">
-            <div class="member d-flex align-items-center flex-column">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info mt-2 text-center">
-                <h4>Chizulum C.Uzoagba.</h4>
-                <span>Managing Director</span> 
-                <div class="social">
+          <div class="col-lg-3 col-md-6">
+            <div class="member d-flex align-items-center flex-column text-center">
+              <div class="pic"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&q=80" class="img-fluid rounded-circle" alt="Chizulum C. Uzoagba"></div>
+              <div class="member-info mt-2">
+                <h4>Chizulum C. Uzoagba</h4>
+                <span>Managing Director</span>
+                <div class="social mt-2">
                   <a href="#"><i class="ri-twitter-fill"></i></a>
                   <a href="#"><i class="ri-facebook-fill"></i></a>
                   <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
                 </div>
               </div>
             </div>
           </div>
- 
-          <div class="col-lg-3">
-            <div class="member d-flex align-items-center flex-column">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info mt-2 text-center">
-                <h4>Uzoagba C. Israel.</h4>
-                <span>Principal Consultant</span> 
-                <div class="social">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member d-flex align-items-center flex-column text-center">
+              <div class="pic"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=300&q=80" class="img-fluid rounded-circle" alt="Uzoagba C. Israel"></div>
+              <div class="member-info mt-2">
+                <h4>Uzoagba C. Israel</h4>
+                <span>Principal Consultant</span>
+                <div class="social mt-2">
                   <a href="#"><i class="ri-twitter-fill"></i></a>
                   <a href="#"><i class="ri-facebook-fill"></i></a>
                   <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="www.linkedin.com/in/ciu"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://www.linkedin.com/in/ciu"><i class="ri-linkedin-box-fill"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          
-            <div class="col-lg-3">
-            <div class="member d-flex align-items-center flex-column">
-              <div class="pic"><img src="assets/img/team/team.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info mt-2 text-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member d-flex align-items-center flex-column text-center">
+              <div class="pic"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&q=80" class="img-fluid rounded-circle" alt="Eizabeth Philip"></div>
+              <div class="member-info mt-2">
                 <h4>Eizabeth Philip</h4>
-                <span>Operations Manager</span> 
-                <div class="social">
+                <span>Operations Manager</span>
+                <div class="social mt-2">
                   <a href="#"><i class="ri-twitter-fill"></i></a>
                   <a href="#"><i class="ri-facebook-fill"></i></a>
                   <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
                 </div>
               </div>
             </div>
           </div>
- 
 
         </div>
-
       </div>
     </section><!-- End Team Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-            
+    <section id="testimonials" class="testimonials py-5">
       <div class="container position-relative">
-               
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-         <h3 class="text-center text-bold text-white z-index-69999">Clients Say</h3>
+          <h3 class="text-center text-bold mb-4">Clients Say</h3>
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+              <div class="testimonial-item p-4 border rounded">
                 <h3>Ozoegbu Joseph</h3>
-                <h4>...</h4>
-                <p> 
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Working with IZYCOM CONSULTS Limited has been a
-                  game-changer for our organisation. Their innovative
-                  solutions and dedication to excellence have helped
-                  us transform our business and stay ahead of the
-                  competition.                  
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+                <p class="small">Working with IZYCOM CONSULTS Limited has been a game-changer for our organisation. Their innovative solutions and dedication to excellence helped us transform our business and stay ahead of the competition.</p>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+              <div class="testimonial-item p-4 border rounded">
                 <h3>Sandra Yusuf</h3>
-                <h4>...</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  The level of connection and collaboration we
-                  experienced with IZYCOM CONSULTS Limited was
-                  exceptional. They took the time to understand our
-                  unique needs and delivered a tailored solution that
-                  exceeded our expectations. Their commitment to
-                  building strong relationships sets them apart.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+                <p class="small">The level of connection and collaboration we experienced with IZYCOM CONSULTS Limited was exceptional. They understood our needs and delivered a tailored solution that exceeded expectations.</p>
               </div>
-            </div><!-- End testimonial item --> 
-
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination mt-3"></div>
         </div>
-
       </div>
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact py-5">
       <div class="container">
         <div class="section-title">
           <span>Contact</span>
           <h2>Contact</h2>
-          <p>
-            We're excited to connect with you! Whether you're looking to elevate your business with our cutting-edge digital transformation solutions, 
-            
-            streamline operations with our IT hardware optimization services, or empower your team through our comprehensive training and development programs, 
-            
-            we're here to guide you every step of the way. Reach out to us today to schedule a free consultation and discover how we can unlock your 
-            
-            organization’s full potential with the right technology solutions tailored just for you.
-          </p>
+          <p>Reach out to schedule a free consultation and discover how our technology solutions can unlock your organisation’s potential.</p>
         </div>
       </div>
 
       <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.759801676406!2d7.566329908853726!3d8.901909191117525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e11aa821db31f%3A0x51500ca56f3f22a1!2sB%20M%20J%20Plaza!5e0!3m2!1sen!2sng!4v1728315739354!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
-          
-          
-        
+        <iframe src="https://www.google.com/maps?q=8.901909,7.56633&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="container">
-
         <div class="info-wrap mt-5">
           <div class="row">
             <div class="col-lg-4 info">
               <i class="ri-map-pin-line"></i>
               <h4>Location:</h4>
-              <p>Suite B8 <br>BMJ Plaza, Orozo Abuja</p>
-            </div> 
+              <p>Suite B8<br>BMJ Plaza, Orozo Abuja</p>
+            </div>
 
             <div class="col-lg-4 info mt-4 mt-lg-0">
               <i class="ri-mail-line"></i>
@@ -906,47 +600,21 @@
             </div>
           </div>
         </div>
-
-        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form> -->
-
       </div>
     </section><!-- End Contact Section -->
-   
-   
-    <!-- ======= Partners Section ======= -->
-    <section id="contact partners" class="contact partners"> 
-      <div class="container"> 
-        <div id="partners-list">
-          <!-- Partners will be appended here -->
-          <div class="image"> <img src="assets/img/partners/cisco.png" alt="cisco">  </div>
-          <div class="image"> <img src="assets/img/partners/dell.png" alt=""> </div>
-          <div class="image"> <img src="assets/img/partners/sophos.png" alt="sophos"> </div>
-          <div class="image"> <img src="assets/img/partners/hp.png" alt="HP"> </div>
-          <div class="image"> <img src="assets/img/partners/eset.png" alt="eset"> </div>
-          <div class="image"> <img src="assets/img/partners/microsoft.png" alt="microsoft"> </div>
-          <div class="image"> <img src="assets/img/partners/kaspersky.png" alt="microsoft"> </div>
 
+    <!-- ======= Partners Section ======= -->
+    <section id="partners" class="py-5 bg-light">
+      <div class="container">
+        <h3 class="text-center mb-4">Our Partners</h3>
+        <div class="partners-list" id="partners-list" aria-label="Partners logos">
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Cisco" alt="Cisco"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Dell" alt="Dell"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Sophos" alt="Sophos"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=HP" alt="HP"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=ESET" alt="ESET"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Microsoft" alt="Microsoft"></div>
+          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Kaspersky" alt="Kaspersky"></div>
         </div>
       </div>
     </section>
@@ -955,89 +623,92 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="bg-dark text-white pt-5">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>IZYCOM CONSULTS</h3>
-              <p>
-                Suite 8 BMJ plaza <br>
-                behind Adjacent to Orozo Market, Orozo Abuja<br><br>
-                <strong>Phone:</strong> +234 7064582355<br>
-                <strong>Email:</strong> info@izycom.org <br>
-              </p>
+              <p>Suite 8 BMJ Plaza<br>Adjacent to Orozo Market, Orozo Abuja<br><br><strong>Phone:</strong> +234 7064582355<br><strong>Email:</strong> info@izycom.org</p>
               <div class="social-links mt-3">
-                    <a href="https://twitter.com/izycom_consults" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/izycomconsults" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/izycomconsults" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/izycom" class="linkedin"><i class="bi bi-linkedin"></i></a>
-
+                <a href="https://twitter.com/izycom_consults" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/izycomconsults" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/izycomconsults" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/izycom" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <ul class="list-unstyled">
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="text-white">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about" class="text-white">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">IT Training</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">IT Harware Optimization </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Security and Compliance Solutions</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Home & Office Automation </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Operational Evolution </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Digital Transformation  </a></li>
+            <ul class="list-unstyled">
+              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">IT Training</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">IT Hardware Optimization</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">Security and Compliance</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter so we keep you abreast with our latest services as they come.</p>
-            <form action="#" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+          <div class="col-lg-4 col-md-6">
+            <h4>Newsletter</h4>
+            <p>Subscribe for updates and insights on our services and events.</p>
+            <form action="#" class="d-flex">
+              <input type="email" class="form-control me-2" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
             </form>
-
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>IZYCOM CONSULTS LIMITED</span></strong>. All Rights Reserved
-      </div> 
+    <div class="container py-3 text-center small">
+      &copy; 2025 IZYCOM CONSULTS LTD. All Rights Reserved.
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS (CDNs) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-..." crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  
+  <!-- Initialize plugins -->
+  <script>
+    // PureCounter automatically initializes using data attributes
 
+    // Initialize GLightbox for portfolio
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.GLightbox) {
+        GLightbox({ selector: '.portfolio-lightbox' });
+      }
 
+      // Initialize Swiper for testimonials if available
+      if (window.Swiper) {
+        new Swiper('.testimonials-slider', {
+          speed: 600,
+          loop: true,
+          autoplay: { delay: 6000, disableOnInteraction: false },
+          slidesPerView: 1,
+          pagination: { el: '.swiper-pagination', clickable: true },
+        });
+      }
+    });
+  </script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 </body>
-
-
 </html>
