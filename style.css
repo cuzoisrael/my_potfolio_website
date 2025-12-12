@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+.header {
+    background: #0b3d91;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #e9f0fa;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #0b3d91;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.section {
+    padding: 60px;
+    background: #fff;
+}
+
+.section.alt {
+    background: #eef3fa;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.lab-list li {
+    margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.footer {
+    background: #0b3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.error-body {
+    background: #f0f0f0;
+}
+
+.error-container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.error-container h1 {
+    font-size: 5rem;
+}
