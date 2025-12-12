@@ -1,1 +1,7 @@
 
+images/
+    ├── cloud-training.png        (Hero section illustration)
+    ├── aws.png                   (AWS logo or cloud icon)
+    ├── devops.png                (DevOps illustration)
+    ├── cybersecurity.png         (Cybersecurity illustration)
+    ├── logo.png                  (Optional site logo)
