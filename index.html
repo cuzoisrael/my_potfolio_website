@@ -1,714 +1,1049 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US" class="nextgen-theme">
 <head>
-  <!-- Essential Meta Tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <meta name="description" content="IZYCOM CONSULTS LTD provides ICT solutions including digital transformation, cybersecurity, business automation, and corporate training to help businesses achieve operational excellence." />
-  <meta name="keywords" content="ICT Solutions, Cyber Security, Digital Transformation, Digital Forensics, Business Automation, Corporate Training, Software Development, Web Development" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Page Title -->
-  <title>IZYCOM CONSULTS - Leading ICT Solutions Provider</title>
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="IZYCOM CONSULTS - Transforming Businesses with ICT Solutions" />
-  <meta property="og:description" content="IZYCOM CONSULTS LTD offers premier ICT services in Cyber Security, Robotics, Data Analysis, digital transformation, business automation, and corporate training." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=IZYCOM+CONSULTS" />
-  <meta property="og:url" content="https://izycom.org/index.html" />
-  <meta property="og:site_name" content="IZYCOM CONSULTS LTD" />
-  <meta property="og:type" content="website" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://via.placeholder.com/32.png?text=I" />
-  <link rel="apple-touch-icon" href="https://via.placeholder.com/180.png?text=IZYCOM" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS (CDNs) -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
-
-  <!-- Template Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-    /* Small utility tweaks to keep partner strip responsive */
-    .partners-list {
-      display: flex;
-      overflow-x: auto;
-      width: 100%;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-    .partner-image {
-      flex: 0 0 auto;
-      width: 160px;
-      height: 60px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      padding: 6px;
-    }
-    .partner-image img { max-width: 100%; max-height: 100%; display:block;}
-    .btn-custom {
-      border-radius: 10px;
-      background-color: #6f2b2b;
-      color: #fff;
-      padding: .6rem 1rem;
-      border: none;
-    }
-    /* Ensure hero caption is readable on all devices */
-    #hero .carousel-content { max-width: 900px; margin: 0 auto; }
-    /* Make embedded map responsive */
-    .map iframe { width: 100%; height: 320px; border:0; }
-  </style>
-
-  <!-- Google Tag Manager (kept as original) -->
-  <script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-5TSSRCKT');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRIBE AFRICA | Next Generation Summit – Elevating Africa's Future Leaders</title>
+    <meta name="description" content="A transformative movement equipping emerging African leaders with practical skills, mentorship, and connections to drive innovation and impact across the continent.">
+    <meta name="keywords" content="Tribe Africa, Next Generation Summit, African Leadership, Business Innovation, Career Development, Africa Rising">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Tribe Africa Color Palette */
+            --tribe-primary: #7B3FE4;
+            --tribe-secondary: #00D4AA;
+            --tribe-accent: #FF6B35;
+            --tribe-dark: #0A0F29;
+            --tribe-light: #F8F9FF;
+            --tribe-gold: #FFD166;
+            
+            /* Modern Gradients */
+            --gradient-primary: linear-gradient(135deg, #7B3FE4 0%, #00D4AA 100%);
+            --gradient-dark: linear-gradient(135deg, #0A0F29 0%, #1A1F3A 100%);
+            --gradient-accent: linear-gradient(135deg, #FF6B35 0%, #FFD166 100%);
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 3rem;
+            --space-xl: 4rem;
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-secondary: 'Space Grotesk', 'Inter', sans-serif;
+            
+            /* Effects */
+            --shadow-lg: 0 20px 40px rgba(123, 63, 228, 0.15);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --glow-effect: 0 0 30px rgba(123, 63, 228, 0.4);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--tribe-dark);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        /* Header - Modern Design */
+        .nextgen-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 15, 41, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(123, 63, 228, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .header-scrolled {
+            background: rgba(10, 15, 41, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            padding: 0.75rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .tribe-logo {
+            height: 50px;
+            width: auto;
+            filter: brightness(1.2);
+        }
+        
+        .logo-text {
+            font-family: var(--font-secondary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .cta-button {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_3775-scaled.jpg') center/cover no-repeat;
+            z-index: -2;
+        }
+        
+        .hero-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 15, 41, 0.85);
+        }
+        
+        .hero-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(123, 63, 228, 0.3) 0%, transparent 70%);
+            z-index: -1;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-text {
+            z-index: 2;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(123, 63, 228, 0.2);
+            color: var(--tribe-secondary);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(123, 63, 228, 0.4);
+        }
+        
+        .hero-title {
+            font-family: var(--font-secondary);
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff 30%, var(--tribe-secondary) 70%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-image-container {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image-container:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: var(--space-xl) 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+            text-align: center;
+        }
+        
+        .stat-item {
+            position: relative;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--tribe-primary);
+        }
+        
+        .stat-number {
+            font-family: var(--font-secondary);
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Why Section */
+        .why-section {
+            padding: var(--space-xl) 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .section-subtitle {
+            color: var(--tribe-secondary);
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-secondary);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        .why-image-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            height: 500px;
+        }
+        
+        .why-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Impact Cards */
+        .impact-section {
+            padding: var(--space-xl) 0;
+            background: var(--gradient-dark);
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+        }
+        
+        .impact-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .impact-card:hover {
+            background: rgba(123, 63, 228, 0.1);
+            transform: translateY(-10px);
+            border-color: var(--tribe-primary);
+        }
+        
+        .impact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: var(--space-xl) 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: var(--space-xl) 0;
+            text-align: center;
+            background: var(--gradient-primary);
+            margin: var(--space-xl) 0;
+            border-radius: 30px;
+        }
+        
+        /* Footer */
+        .nextgen-footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: var(--space-xl) 0;
+            border-top: 1px solid rgba(123, 63, 228, 0.3);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--space-lg);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .lightbox-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .impact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-md);
+            }
+            
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 15, 41, 0.98);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-top: 1px solid rgba(123, 63, 228, 0.3);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .stats-grid,
+            .impact-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSSRCKT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="fixed-top d-flex align-items-center bg-white">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center small">
-        <i class="bi bi-envelope d-flex align-items-center me-2"><a href="mailto:info@izycom.org">info@izycom.org</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-3"><span>+2347064582355</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex">
-        <a href="https://twitter.com/izycom_consults" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/izycomconsults" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/izycomconsults" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/izycom" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top bg-light shadow-sm">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo">
-        <a href="index.html" aria-label="IZYCOM Home">
-          <img src="https://via.placeholder.com/200x60.png?text=IZYCOM" alt="IZYCOM Logo" height="48">
-        </a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul class="list-unstyled d-flex mb-0 align-items-center gap-3">
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#project">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle" aria-hidden="true"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="pt-5">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <!-- Indicators -->
-        <div class="carousel-indicators"></div>
-
-        <!-- Carousel Slides -->
-        <div class="carousel-inner">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&q=80'); background-size: cover; background-position:center;">
-            <div class="carousel-container py-6">
-              <div class="carousel-content text-center text-white">
-                <h2 class="animate__animated animate__fadeInDown"><span class="text-primary">IZYCOM CONSULTS</span></h2>
-                <p class="animate__animated animate__fadeInUp">Empowering organizations with digital transformation solutions to achieve business success and thrive in the digital age.</p>
-                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
-              </div>
+    <!-- Header -->
+    <header class="nextgen-header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/6f356fd2-4a4a-4485-880e-5d4e7f07952d-removebg-preview-e1766402677447.png" alt="Tribe Africa Logo" class="tribe-logo">
+                    <div class="logo-text">TRIBE AFRICA</div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">The Summit</a>
+                    <a href="#impact" class="nav-link">Impact</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#register" class="nav-link">Register</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#register" class="cta-button">Register Now</a>
+                </nav>
             </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80'); background-size: cover; background-position:center;">
-            <div class="carousel-container py-6">
-              <div class="carousel-content text-center text-white">
-                <h2 class="animate__animated animate__fadeInDown">OPERATIONAL EVOLUTION</h2>
-                <p class="animate__animated animate__fadeInUp">Streamline workflows, improve efficiency, and optimize your supply chain with tailored solutions that eliminate bottlenecks and reduce waste.</p>
-                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=1600&q=80'); background-size: cover; background-position:center;">
-            <div class="carousel-container py-6">
-              <div class="carousel-content text-center text-white">
-                <h2 class="animate__animated animate__fadeInDown">OUR GLOBAL REACH</h2>
-                <p class="animate__animated animate__fadeInUp">Partnering with clients worldwide, delivering consistent quality and expertise to help businesses thrive regardless of location.</p>
-                <a href="https://forms.gle/Fk5Q4NmM1Esm6dMEA" class="btn btn-custom animate__animated animate__fadeInUp" target="_blank" rel="noopener">Register Now</a>
-              </div>
-            </div>
-          </div>
-
         </div>
+    </header>
 
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <div class="hero-badge">NEXT GENERATION SUMMIT 2026</div>
+                    <h1 class="hero-title">Igniting Africa's Future Through Collective Leadership</h1>
+                    <p class="hero-subtitle">
+                        We're building a movement of young African leaders equipped to transform industries, 
+                        drive innovation, and create sustainable impact across the continent. Join us as we 
+                        shape the future of African leadership.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                        <a href="#register" class="cta-button">Secure Your Spot</a>
+                        <a href="#about" class="cta-button" style="background: transparent; border: 2px solid var(--tribe-primary);">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="hero-image-container floating-element">
+                        <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_3785-scaled.jpg" alt="Tribe Africa Summit" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-number">1000+</div>
+                    <h3>Leaders Trained</h3>
+                    <p>Emerging African leaders equipped with next-gen skills</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">70+</div>
+                    <h3>Industry Experts</h3>
+                    <p>Mentors from across Africa and the diaspora</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">200+</div>
+                    <h3>Success Stories</h3>
+                    <p>Businesses launched and careers transformed</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number">50+</div>
+                    <h3>Nationalities</h3>
+                    <p>Pan-African representation and collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="about" class="why-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-subtitle">WHY THIS MATTERS</div>
+                <h2 class="section-title">Redefining African Leadership for the Next Generation</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-content fade-in">
+                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem;">The Future of Africa is Being Written Now</h3>
+                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
+                        Africa stands at a critical juncture. With the world's youngest population and fastest-growing 
+                        digital adoption, we have a unique opportunity to leapfrog traditional development models and 
+                        create innovative solutions to our continent's challenges.
+                    </p>
+                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.8);">
+                        The Next Generation Summit is more than an event—it's a movement. We're creating a new narrative 
+                        of African leadership that combines technological innovation with cultural wisdom, business 
+                        excellence with social impact, and individual success with collective advancement.
+                    </p>
+                    <p style="color: var(--tribe-secondary); font-weight: 600;">
+                        We believe in Africa's potential to lead in the 4th Industrial Revolution, and we're building 
+                        the leaders who will make that happen.
+                    </p>
+                </div>
+                <div class="why-image-container fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_1985-scaled-e1766428293794.jpg" alt="African Leadership" class="why-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-subtitle">OUR IMPACT</div>
+                <h2 class="section-title">Building Africa's Leadership Pipeline</h2>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovation Ecosystem</h3>
+                    <p>Creating a sustainable network of innovators, investors, and institutions driving Africa's digital transformation.</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Cross-Border Collaboration</h3>
+                    <p>Facilitating pan-African partnerships that break down silos and accelerate continental progress.</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <div class="impact-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Sustainable Development</h3>
+                    <p>Empowering leaders who balance profit with purpose, creating businesses that solve real African challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-subtitle">OUR MOVEMENT</div>
+                <h2 class="section-title">Moments That Define Our Journey</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_3783-scaled.jpg" alt="Tribe Africa Event" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_2100-scaled.jpg" alt="Leadership Session" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_2364-1-scaled.jpg" alt="Community Building" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/4Z4A9547-1-scaled.jpg" alt="Summit 2025" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_1950-scaled.jpg" alt="Tribe Africa Gathering" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_1936-scaled.jpg" alt="Workshop Session" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_2025-scaled.jpg" alt="Networking Event" class="gallery-image">
+                </div>
+                <div class="gallery-item fade-in">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/IMG_2109-scaled.jpg" alt="African Leadership" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="register" class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Join the Movement?</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+                Be part of Africa's most transformative leadership experience
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#register" class="cta-button" style="background: white; color: var(--tribe-dark);">Register for Summit 2026</a>
+                <a href="#sponsor" class="cta-button" style="background: transparent; border: 2px solid white;">Become a Partner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="nextgen-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://nextgenerationsummit.com/wp-content/uploads/2025/12/6f356fd2-4a4a-4485-880e-5d4e7f07952d-removebg-preview-e1766402677447.png" alt="Tribe Africa" class="footer-logo">
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem;">
+                        Tribe Africa is a movement dedicated to elevating African leadership and innovation. 
+                        We believe in the power of collective action to transform our continent.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 style="margin-bottom: 1.5rem; color: var(--tribe-secondary);">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.75rem;"><a href="#home" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#about" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">About Summit</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#impact" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Our Impact</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#gallery" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="margin-bottom: 1.5rem; color: var(--tribe-secondary);">Contact</h4>
+                    <ul style="list-style: none; color: rgba(255, 255, 255, 0.7);">
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--tribe-secondary);"></i>
+                            The Purple Place, Lokogoma, Abuja
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: var(--tribe-secondary);"></i>
+                            nextgen@tribeafrica.com
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-phone" style="color: var(--tribe-secondary);"></i>
+                            +234 81 6754 345
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="margin-bottom: 1.5rem; color: var(--tribe-secondary);">Summit 2026</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7);">
+                        <i class="far fa-calendar-alt" style="color: var(--tribe-secondary); margin-right: 0.5rem;"></i>
+                        20th June, 2026<br>
+                        <i class="far fa-clock" style="color: var(--tribe-secondary); margin-right: 0.5rem;"></i>
+                        9:00 AM WAT<br>
+                        <i class="fas fa-map-pin" style="color: var(--tribe-secondary); margin-right: 0.5rem;"></i>
+                        Abuja, Nigeria
+                    </p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                <p style="color: rgba(255, 255, 255, 0.5);">
+                    © 2026 Tribe Africa Next Generation Summit. All rights reserved. | 
+                    <span style="color: var(--tribe-secondary);">#AfricaRising #NextGenLeaders</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about py-5">
-      <div class="container">
-        <div class="row content align-items-center">
-          <div class="col-lg-6">
-            <h2 class="fw-bold text-primary">Company Overview</h2>
-            <p>At <strong>Izycom Consults Limited</strong>, we are a technology solutions company driven by innovation and dedicated to empowering businesses with exceptional services. Our team combines deep technical skills with real-world business experience to deliver measurable results.</p>
-            <p>We provide a comprehensive range of services tailored to our clients' unique needs, including digital transformation, security and compliance, operational evolution, IT hardware optimization, and corporate training.</p>
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <h2 class="fw-bold text-success">Our Commitment</h2>
-            <p>Established in <strong>2021</strong>, Izycom Consults Limited was founded with the vision of helping businesses streamline operations and achieve their goals through transformative technology and people-centered change.</p>
-            <p>Our client-centric approach focuses on understanding each client's unique needs, challenges, and objectives. We collaborate closely to develop customized solutions that address specific requirements and deliver long-term outcomes.</p>
-            <p>We are passionate about innovation and staying ahead of industry trends. By continuously improving our skills and embracing emerging technologies, we deliver world-class solutions that empower our clients to compete and grow.</p>
-          </div>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
         </div>
-      </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= About List Section ======= -->
-    <section id="about-list" class="about-list py-5" aria-labelledby="about-list-title">
-      <div class="container">
-        <header class="section-header text-center mb-5">
-          <h2 id="about-list-title" class="fw-bold text-uppercase">About Us</h2>
-          <p class="text-muted">Discover our vision, mission, and goals that drive our commitment to digital transformation and innovation.</p>
-        </header>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <article class="icon-box mt-4" role="listitem" aria-labelledby="vision-title">
-              <div class="icon"><i class="bx bx-receipt text-primary bx-lg" aria-hidden="true"></i></div>
-              <h3 id="vision-title" class="fw-bold text-uppercase">Vision</h3>
-              <p>To inspire and provide innovative solutions that digitally transform organizations worldwide, empowering them to excel in a rapidly evolving digital landscape.</p>
-            </article>
-
-            <article class="icon-box mt-4" role="listitem" aria-labelledby="mission-title">
-              <div class="icon"><i class="bx bx-cube-alt text-success bx-lg" aria-hidden="true"></i></div>
-              <h3 id="mission-title" class="fw-bold text-uppercase">Mission</h3>
-              <p>To empower individuals and businesses globally by delivering cutting-edge digital transformation solutions, fostering growth, and unlocking their full potential.</p>
-            </article>
-
-            <article class="icon-box mt-4" role="listitem" aria-labelledby="goal-title">
-              <div class="icon"><i class="bx bx-directions text-warning bx-lg" aria-hidden="true"></i></div>
-              <h3 id="goal-title" class="fw-bold text-uppercase">Goal</h3>
-              <p>To establish ourselves as the premier provider of innovative digital transformation solutions, enabling organizations to achieve operational excellence and long-term success.</p>
-            </article>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2">
-            <figure class="image" aria-hidden="true">
-              <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=900&q=80" alt="Digital Transformation Illustration" class="img-fluid rounded">
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About List Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts py-5 bg-light" aria-labelledby="counts-title">
-      <div class="container position-relative">
-        <div class="text-center title">
-          <h2 id="counts-title" class="text-bold">What We Have Achieved So Far</h2>
-        </div>
-
-        <div class="row counters mt-4 text-center">
-          <div class="col-lg-3 col-6 mb-3">
-            <span id="clients-counter" data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter">232</span>
-            <p class="fw-bold">Clients</p>
-          </div>
-          <div class="col-lg-3 col-6 mb-3">
-            <span id="projects-counter" data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter">521</span>
-            <p class="fw-bold">Projects</p>
-          </div>
-          <div class="col-lg-3 col-6 mb-3">
-            <span id="support-counter" data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter">1463</span>
-            <p class="fw-bold">Hours of Support</p>
-          </div>
-          <div class="col-lg-3 col-6 mb-3">
-            <span id="employees-counter" data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter">18</span>
-            <p class="fw-bold">Professional Employees</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Counts Section -->
-
-    <!-- ======= Core Values Section ======= -->
-    <section id="core-values" class="py-5">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2 class="text-bold mt-5">OUR CORE VALUES</h2>
-          <p class="mt-3 text-muted">At IZYCOM CONSULTS Limited, our core values are the guiding principles that shape our mission and vision. They reflect our commitment to innovation, connectivity, and excellence.</p>
-        </div>
-
-        <div class="row mt-4">
-          <div class="col-lg-12">
-            <article class="icon-box mt-4 d-flex align-items-start">
-              <div class="icon me-4"><i class="bx bx-paint-roll bx-lg text-primary" aria-hidden="true"></i></div>
-              <div>
-                <h3 class="text-uppercase fw-bold">Innovate</h3>
-                <p>We challenge the status quo by encouraging our team to think creatively, explore emerging technologies and deliver forward-looking solutions for our clients.</p>
-              </div>
-            </article>
-
-            <article class="icon-box mt-4 d-flex align-items-start">
-              <div class="icon me-4"><i class="bx bx-conversation bx-lg text-success" aria-hidden="true"></i></div>
-              <div>
-                <h3 class="text-uppercase fw-bold">Connect</h3>
-                <p>We foster meaningful relationships through transparent communication and strong partnerships that allow collaborative problem solving and better outcomes.</p>
-              </div>
-            </article>
-
-            <article class="icon-box mt-4 d-flex align-items-start">
-              <div class="icon me-4"><i class="bx bxs-plane-take-off bx-lg text-warning" aria-hidden="true"></i></div>
-              <div>
-                <h3 class="text-uppercase fw-bold">Inspire</h3>
-                <p>We motivate clients and colleagues by demonstrating excellence and helping teams adopt new capabilities that unlock growth and impact.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Why Choose Us Section ======= -->
-    <section id="whychooseus" class="services section-bg-two py-5">
-      <div class="container">
-        <div class="section-title my-3">
-          <span>WHY CHOOSE US</span>
-          <p class="mt-3 text-muted">Our core competence lies in providing customized and effective solutions to our clients' business needs. With a team of experienced professionals, we deliver high-quality services that exceed expectations.</p>
-        </div>
-
-        <div class="row gy-3">
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-briefcase"></i>
-              <h4>01 - EXPERTISE</h4>
-              <p>Deep industry knowledge and modern technology skills enable us to create innovative and effective solutions.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-card-checklist"></i>
-              <h4>02 - CUSTOMER SATISFACTION</h4>
-              <p>We prioritize client success, delivering solutions that match client goals and provide measurable value.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-bar-chart"></i>
-              <h4>03 - TAILORED SOLUTIONS</h4>
-              <p>Every solution is designed for the client's unique environment, goals, and budget.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-binoculars"></i>
-              <h4>04 - COMPETITIVE PRICING</h4>
-              <p>We provide cost-effective solutions without sacrificing quality, maximizing ROI for our clients.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Why Choose Us Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg py-5">
-      <div class="container">
-        <div class="section-title">
-          <span>Services</span>
-          <h2>Services</h2>
-          <p>Stay updated with our best-in-class array of digital services.</p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-brightness-high"></i>
-              <h4>DIGITAL TRANSFORMATION</h4>
-              <p>Comprehensive solutions including Identity and Access Management, Microsoft Azure Services, Data Center Automation, Enterprise Storage, and more.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="icon-box p-3 border rounded">
-              <i class="bi bi-gear"></i>
-              <h4>OPERATIONAL EVOLUTION</h4>
-              <p>Solutions to streamline workflows, improve efficiency, and deliver actionable business intelligence.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Industries Section ======= -->
-    <section id="industries" class="services section-bg-two py-5">
-      <div class="container">
-        <div class="section-title my-3">
-          <span>INDUSTRIES WE SERVE</span>
-          <p class="mt-3 text-muted">We partner with organizations across sectors including Banking, Healthcare, Education, Government, Retail, Manufacturing, Hospitality, IT, Energy and Non-profits to deliver sustainable and impactful solutions.</p>
-        </div>
-
-        <div class="row gy-3">
-          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Banking and Finance</h4><p>Technology integration and advisory to enhance operational efficiency and customer experience.</p></div></div>
-          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Healthcare</h4><p>Solutions to improve patient care, sustainability and operational workflows.</p></div></div>
-          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Education</h4><p>Training, workshops and digital tools to support educators and institutions.</p></div></div>
-          <div class="col-md-6"><div class="icon-box p-3 border rounded"><h4>Government</h4><p>Policy advisory, capacity building and sustainable project implementations.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="project" class="portfolio py-5">
-      <div class="container">
-        <div class="section-title">
-          <span>OUR PROJECT</span>
-          <h2>OUR PROJECT</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters" class="list-unstyled d-flex gap-3 justify-content-center mb-4">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Group 1</li>
-              <li data-filter=".filter-card">Group 2</li>
-              <li data-filter=".filter-web">Group 3</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container gy-4">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap border rounded overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1526378725940-7a5e7b3e8a54?w=900&q=80" class="img-fluid" alt="NBRRI project">
-              <div class="portfolio-info p-3">
-                <h4>Nigerian Building & Road Research Institute (NBRRI)</h4>
-                <p>Operational Evolution</p>
-                <div class="portfolio-links">
-                  <a href="https://images.unsplash.com/photo-1526378725940-7a5e7b3e8a54?w=1600&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We offered the Operational Evolution solution to assist in optimizing operations.">View</a>
-                  <a href="#" title="More Details"><i class="ri-links-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap border rounded overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=900&q=80" class="img-fluid" alt="NIA project">
-              <div class="portfolio-info p-3">
-                <h4>National Intelligence Agency</h4>
-                <p>Security and Compliance</p>
-                <div class="portfolio-links">
-                  <a href="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1600&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox" title="We leveraged our Security and Compliance solution to assist NIA.">View</a>
-                  <a href="#" title="More Details"><i class="ri-links-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team py-5">
-      <div class="container">
-        <div class="section-title">
-          <span>OUR TEAM</span>
-          <h2>OUR TEAM</h2>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="member d-flex align-items-center flex-column text-center">
-              <div class="pic"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&q=80" class="img-fluid rounded-circle" alt="Fanny Unaka"></div>
-              <div class="member-info mt-2">
-                <h4>Fanny Unaka</h4>
-                <span>NON-EXECUTIVE DIRECTOR</span>
-                <div class="social mt-2">
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                  <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member d-flex align-items-center flex-column text-center">
-              <div class="pic"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&q=80" class="img-fluid rounded-circle" alt="Chizulum C. Uzoagba"></div>
-              <div class="member-info mt-2">
-                <h4>Chizulum C. Uzoagba</h4>
-                <span>Managing Director</span>
-                <div class="social mt-2">
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                  <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member d-flex align-items-center flex-column text-center">
-              <div class="pic"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=300&q=80" class="img-fluid rounded-circle" alt="Uzoagba C. Israel"></div>
-              <div class="member-info mt-2">
-                <h4>Uzoagba C. Israel</h4>
-                <span>Principal Consultant</span>
-                <div class="social mt-2">
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                  <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="https://www.linkedin.com/in/ciu"><i class="ri-linkedin-box-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member d-flex align-items-center flex-column text-center">
-              <div class="pic"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&q=80" class="img-fluid rounded-circle" alt="Eizabeth Philip"></div>
-              <div class="member-info mt-2">
-                <h4>Eizabeth Philip</h4>
-                <span>Operations Manager</span>
-                <div class="social mt-2">
-                  <a href="#"><i class="ri-twitter-fill"></i></a>
-                  <a href="#"><i class="ri-facebook-fill"></i></a>
-                  <a href="#"><i class="ri-instagram-fill"></i></a>
-                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials py-5">
-      <div class="container position-relative">
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-center text-bold mb-4">Clients Say</h3>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item p-4 border rounded">
-                <h3>Ozoegbu Joseph</h3>
-                <p class="small">Working with IZYCOM CONSULTS Limited has been a game-changer for our organisation. Their innovative solutions and dedication to excellence helped us transform our business and stay ahead of the competition.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item p-4 border rounded">
-                <h3>Sandra Yusuf</h3>
-                <p class="small">The level of connection and collaboration we experienced with IZYCOM CONSULTS Limited was exceptional. They understood our needs and delivered a tailored solution that exceeded expectations.</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination mt-3"></div>
-        </div>
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact py-5">
-      <div class="container">
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
-          <p>Reach out to schedule a free consultation and discover how our technology solutions can unlock your organisation’s potential.</p>
-        </div>
-      </div>
-
-      <div class="map">
-        <iframe src="https://www.google.com/maps?q=8.901909,7.56633&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="container">
-        <div class="info-wrap mt-5">
-          <div class="row">
-            <div class="col-lg-4 info">
-              <i class="ri-map-pin-line"></i>
-              <h4>Location:</h4>
-              <p>Suite B8<br>BMJ Plaza, Orozo Abuja</p>
-            </div>
-
-            <div class="col-lg-4 info mt-4 mt-lg-0">
-              <i class="ri-mail-line"></i>
-              <h4>Email:</h4>
-              <p>info@izycom.org<br>contact@izycom.org</p>
-            </div>
-
-            <div class="col-lg-4 info mt-4 mt-lg-0">
-              <i class="ri-phone-line"></i>
-              <h4>Call:</h4>
-              <p>+2347064582355</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-    <!-- ======= Partners Section ======= -->
-    <section id="partners" class="py-5 bg-light">
-      <div class="container">
-        <h3 class="text-center mb-4">Our Partners</h3>
-        <div class="partners-list" id="partners-list" aria-label="Partners logos">
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Cisco" alt="Cisco"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Dell" alt="Dell"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Sophos" alt="Sophos"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=HP" alt="HP"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=ESET" alt="ESET"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Microsoft" alt="Microsoft"></div>
-          <div class="partner-image"><img src="https://via.placeholder.com/160x60.png?text=Kaspersky" alt="Kaspersky"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End Partners Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="bg-dark text-white pt-5">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>IZYCOM CONSULTS</h3>
-              <p>Suite 8 BMJ Plaza<br>Adjacent to Orozo Market, Orozo Abuja<br><br><strong>Phone:</strong> +234 7064582355<br><strong>Email:</strong> info@izycom.org</p>
-              <div class="social-links mt-3">
-                <a href="https://twitter.com/izycom_consults" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.facebook.com/izycomconsults" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/izycomconsults" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/izycom" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul class="list-unstyled">
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="text-white">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about" class="text-white">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul class="list-unstyled">
-              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">IT Training</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">IT Hardware Optimization</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-white">Security and Compliance</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <h4>Newsletter</h4>
-            <p>Subscribe for updates and insights on our services and events.</p>
-            <form action="#" class="d-flex">
-              <input type="email" class="form-control me-2" placeholder="Your Email" aria-label="Your Email">
-              <button class="btn btn-primary" type="submit">Subscribe</button>
-            </form>
-          </div>
-
-        </div>
-      </div>
     </div>
 
-    <div class="container py-3 text-center small">
-      &copy; 2025 IZYCOM CONSULTS LTD. All Rights Reserved.
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <!-- Vendor JS (CDNs) -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-..." crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <!-- Initialize plugins -->
-  <script>
-    // PureCounter automatically initializes using data attributes
-
-    // Initialize GLightbox for portfolio
-    document.addEventListener('DOMContentLoaded', function() {
-      if (window.GLightbox) {
-        GLightbox({ selector: '.portfolio-lightbox' });
-      }
-
-      // Initialize Swiper for testimonials if available
-      if (window.Swiper) {
-        new Swiper('.testimonials-slider', {
-          speed: 600,
-          loop: true,
-          autoplay: { delay: 6000, disableOnInteraction: false },
-          slidesPerView: 1,
-          pagination: { el: '.swiper-pagination', clickable: true },
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
         });
-      }
-    });
-  </script>
 
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Fade in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        // Initial check
+        fadeInOnScroll();
+        
+        // Check on scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+
+        // Gallery lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                lightboxImage.src = imgSrc;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animate stats counters
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let animated = false;
+
+        const animateStats = () => {
+            if (animated) return;
+            
+            const statsSection = document.querySelector('.stats-section');
+            const sectionTop = statsSection.getBoundingClientRect().top;
+            
+            if (sectionTop < window.innerHeight - 100) {
+                statNumbers.forEach(stat => {
+                    const target = parseInt(stat.textContent.replace('+', ''));
+                    const increment = target / 100;
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        stat.textContent = Math.floor(current) + '+';
+                    }, 20);
+                });
+                
+                animated = true;
+            }
+        };
+
+        window.addEventListener('scroll', animateStats);
+    </script>
 </body>
 </html>
